@@ -12,7 +12,87 @@
         <script type="text/javascript" src="src/lib/functionPrototypeBind.js"></script>
         <script type="text/javascript" src="src/lib/classList.js"></script>
         <script type="text/javascript" src="src/lib/requestAnimationFrame.js"></script>
-        <script type="text/javascript" src="src/lib/require.js" data-main="src/main"></script>
+        <script>
+            var require = { baseUrl: 'src' };
+        </script>
+        <script type="text/javascript" src="src/lib/require.js"></script>
+        <script type="text/javascript">
+            require(['src/examples/' + location.search.replace('?','')]);
+        </script>
     </head>
-    <body></body>
+    <body>
+        <div style="position:fixed;bottom:0;left:0;right:0;background-color:white;z-index:10">
+            <table>
+                <tr>
+                    <td style="padding: 5px;">
+                        <a href="?core/Context/example.js">core/Context</a><br>
+                        <a href="?core/Engine/example.js">core/Engine</a><br>
+                        <a href="?core/EventHandler/example.js">core/EventHandler</a><br>
+                        <a href="?core/Modifier/example.js">core/Modifier</a><br>
+                        <a href="?core/Scene/example.js">core/Scene</a><br>
+                        <a href="?core/Surface/example.js">core/Surface</a><br>
+                        <a href="?core/Transform/example.js">core/Transform</a><br>
+                        <a href="?core/View/example.js">core/View</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?events/EventArbiter/example.js">events/EventArbiter</a><br>
+                        <a href="?events/EventFilter/example.js">events/EventFilter</a><br>
+                        <a href="?events/EventMapper/example.js">events/EventMapper</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?inputs/GenericSync/example.js">inputs/GenericSync</a><br>
+                        <a href="?inputs/MouseSync/example.js">inputs/MouseSync</a><br>
+                        <a href="?inputs/PinchSync/example.js">inputs/PinchSync</a><br>
+                        <a href="?inputs/RotateSync/example.js">inputs/RotateSync</a><br>
+                        <a href="?inputs/ScaleSync/example.js">inputs/ScaleSync</a><br>
+                        <a href="?inputs/ScrollSync/example.js">inputs/ScrollSync</a><br>
+                        <a href="?inputs/TouchSync/example.js">inputs/TouchSync</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?math/Matrix/example.js">math/Matrix</a><br>
+                        <a href="?math/Quaternion/example.js">math/Quaternion</a><br>
+                        <a href="?math/Random/example.js">math/Random</a><br>
+                        <a href="?math/Vector/example.js">math/Vector</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?modifiers/Draggable/example.js">modifiers/Draggable</a><br>
+                        <a href="?modifiers/ModifierChain/example.js">modifiers/ModifierChain</a><br>
+                        <a href="?modifiers/StateModifier/example.js">modifiers/StateModifier</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?surfaces/ContainerSurface/example.js">surfaces/ContainerSurface</a><br>
+                        <a href="?surfaces/ImageSurface/example.js">surfaces/ImageSurface</a><br>
+                        <a href="?surfaces/InputSurface/example.js">surfaces/InputSurface</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?transitions/Easing/example.js">transitions/Easing</a><br>
+                        <a href="?transitions/SnapTransition/example.js">transitions/SnapTransition</a><br>
+                        <a href="?transitions/SpringTransition/example.js">transitions/SpringTransition</a><br>
+                        <a href="?transitions/Transitionable/example.js">transitions/Transitionable</a><br>
+                        <a href="?transitions/TransitionableTransform/example.js">transitions/TransitionableTransform</a><br>
+                        <a href="?transitions/TweenTransition/example.js">transitions/TweenTransition</a><br>
+                        <a href="?transitions/WallTransition/example.js">transitions/WallTransition</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?utilities/KeyCodes/example.js">utilities/KeyCodes</a><br>
+                        <a href="?utilities/Timer/every.js">utilities/Timer/every</a><br>
+                        <a href="?utilities/Timer/after.js">utilities/Timer/after</a><br>
+                        <a href="?utilities/Timer/clear.js">utilities/Timer/clear</a><br>
+                        <a href="?utilities/Timer/setTimeout.js">utilities/Timer/setTimeout</a><br>
+                        <a href="?utilities/Timer/setInterval.js">utilities/Timer/setInterval</a><br>
+                        <a href="?utilities/Utility/after.js">utilities/Utility/after</a><br>
+                    </td>
+                    <td style="padding: 5px;">
+                        <a href="?views/Deck/example.js">views/Deck</a><br>
+                        <a href="?views/EdgeSwapper/example.js">views/EdgeSwapper</a><br>
+                        <a href="?views/GridLayout/example.js">views/GridLayout</a><br>
+                        <a href="?views/HeaderFooterLayout/example.js">views/HeaderFooterLayout</a><br>
+                        <a href="?views/RenderController/example.js">views/RenderController</a><br>
+                        <a href="?views/Scrollview/example.js">views/Scrollview</a><br>
+                        <a href="?views/SequentialLayout/example.js">views/SequentialLayout</a><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
 </html>
